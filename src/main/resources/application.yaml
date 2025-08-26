@@ -1,22 +1,6 @@
 spring:
   profiles:
     active: dev
-  application:
-    name: Spring projesi oluşturma
-  datasource:
-    url: jdbc:postgresql://localhost:5432/bebka
-    driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: 1116
-
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-
-    hibernate:
-      ddl-auto: create
-      show-sql: true
 
 server:
-  port: 8080
+  port: 8084
