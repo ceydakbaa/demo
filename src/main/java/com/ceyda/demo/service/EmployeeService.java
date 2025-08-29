@@ -33,5 +33,11 @@ public class EmployeeService {
         employeeRepository.deleteById(id);
     }
 
+    public List<Employee> findAllEmployeesByDepartment(String department){
+        return employeeRepository.findByDepartment(department);
+    }
 
+    public List<Employee> findAllEmployeesByName(String name){
+        return employeeRepository.findByFirstNameContaining(name);
+    }
 }
