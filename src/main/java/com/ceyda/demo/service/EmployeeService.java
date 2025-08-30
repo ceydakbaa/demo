@@ -40,4 +40,17 @@ public class EmployeeService {
     public List<Employee> findAllEmployeesByName(String name){
         return employeeRepository.findByFirstNameContaining(name);
     }
+
+    public List<Employee> findEmployeesBySalary(Double amount){
+        return employeeRepository.findBySalaryGreaterThan(amount);
+    }
+
+    public List<Employee> findByDepartment(String dept){
+        return employeeRepository.findByDepartment(dept);
+    }
+
+
+
+
+
 }

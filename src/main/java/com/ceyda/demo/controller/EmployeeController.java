@@ -49,4 +49,16 @@ public class EmployeeController {
     public List<Employee>  findByEmployeesByDepartment(@RequestParam String department){
         return employeeService.findAllEmployeesByDepartment(department);
     }
+
+    @GetMapping("/salary/{amount}")
+    public List<Employee> findBySalary(@PathVariable Double amount){
+        return employeeService.findEmployeesBySalary(amount);
+    }
+
+    @GetMapping("/dept/{dept}")
+    public List<Employee> findByDepartment(@PathVariable String dept){
+        return employeeService.findByDepartment(dept);
+    }
+
+
 }
